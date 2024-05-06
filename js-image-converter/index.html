@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.11/dist/ext/response-targets.js"></script>
+</head>
+<body hx-ext="response-targets">
+  <form
+    hx-encoding="multipart/form-data"
+    hx-post="/upload"
+    hx-target="#result"
+    hx-target-error="#result"
+    hx-swap="innerHTML"
+    >
+    <input type="file" name="image" accept="image/png" />
+    <button>
+      Upload
+    </button>
+  </form>
+  <div id="result">
+  </div>
+</body>
+</html>

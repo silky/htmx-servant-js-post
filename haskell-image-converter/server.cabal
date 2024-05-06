@@ -1,0 +1,37 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.36.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           server
+version:        0.0.0
+build-type:     Simple
+
+executable server
+  main-is: Main.hs
+  other-modules:
+      Paths_server
+  hs-source-dirs:
+      src
+  default-extensions:
+      DataKinds
+      OverloadedStrings
+  ghc-options: -W -Wall
+  build-depends:
+      JuicyPixels
+    , base
+    , blaze-html
+    , bytestring
+    , http-client
+    , http-types
+    , servant
+    , servant-blaze
+    , servant-multipart
+    , servant-server
+    , shakespeare
+    , text
+    , uuid
+    , wai
+    , warp
+  default-language: GHC2021

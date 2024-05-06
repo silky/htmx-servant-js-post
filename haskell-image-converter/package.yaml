@@ -1,0 +1,32 @@
+name: server
+
+ghc-options:
+  -W
+  -Wall
+
+language: GHC2021
+
+default-extensions:
+  - DataKinds
+  - OverloadedStrings
+
+executables:
+  server:
+    source-dirs: src
+    main: Main.hs
+    dependencies:
+      - JuicyPixels
+      - base
+      - blaze-html
+      - bytestring
+      - http-client
+      - http-types
+      - servant
+      - servant-blaze
+      - servant-multipart
+      - servant-server
+      - shakespeare
+      - text
+      - uuid
+      - wai
+      - warp
